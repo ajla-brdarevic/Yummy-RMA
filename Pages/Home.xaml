@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Yummy.Pages.Home"
+             Title="Home"
+             BackgroundColor="#FFF5E4">
+    <ScrollView>
+            <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+                <HorizontalStackLayout
+                HorizontalOptions="Start"
+                VerticalOptions="Start">
+                    <Image
+                    x:Name="timeOfTheDayImage"
+                    HeightRequest="30"
+                    WidthRequest="30"></Image>
+                    <Label
+                    x:Name="messageTextBlock"
+                    TextColor="#000000"
+                    FontSize="26"
+                    Padding="10"
+                    FontFamily="Poppins-Medium"></Label>
+                </HorizontalStackLayout>
+
+                <Frame
+                HeightRequest="200"
+                BackgroundColor="#F3A83C"
+                BorderColor="Transparent"></Frame>
+
+                <Label
+                Text="Popular Receipes"
+                TextColor="Black"
+                FontSize="22"
+                FontFamily="Poppins-Medium"></Label>
+
+                <CarouselView></CarouselView>
+
+                <Label
+                Text="Ideas"
+                TextColor="Black"
+                FontSize="22"
+                FontFamily="Poppins-Medium"></Label>
+            </VerticalStackLayout>
+        </ScrollView>
+
+</ContentPage>

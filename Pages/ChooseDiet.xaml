@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Yummy.Pages.ChooseDiet"
+             Title="ChooseDiet"
+             BackgroundColor="#FFF5E4">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            VerticalOptions="Center">
+            <HorizontalStackLayout
+                Spacing="5"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="290">
+                <Frame
+                BackgroundColor="#F3A83C"
+                CornerRadius="15"
+                VerticalOptions="Center"
+                BorderColor="Transparent">
+                    <Label
+                        Text="Choose your diet preferences"
+                        TextColor="White"
+                        FontSize="Medium"
+                        FontAttributes="Bold">
+
+                    </Label>
+                </Frame>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                    HorizontalOptions="StartAndExpand">
+                <CheckBox x:Name="Dijeta1"
+                          Margin="10,0,0,0"
+                              HorizontalOptions="Center"
+                              Color="Black"/>
+                <Label x:Name="VrstaDijeta1Naziv" 
+                       FontSize="Medium" 
+                       HorizontalTextAlignment="Center" 
+                       Margin="10,0,0,0"
+                       VerticalTextAlignment="Center"
+                       TextColor="Black"
+                       FontAttributes="Bold"></Label>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                    HorizontalOptions="StartAndExpand">
+                <CheckBox x:Name="Dijeta2"
+                          Margin="10,0,0,0"
+                              HorizontalOptions="Center"
+                              Color="Black"/>
+                <Label x:Name="VrstaDijeta2Naziv" 
+                       FontSize="Medium" 
+                       HorizontalTextAlignment="Center" 
+                       Margin="10,0,0,0"
+                       VerticalTextAlignment="Center"
+                       TextColor="Black"
+                     FontAttributes="Bold"></Label>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                    HorizontalOptions="StartAndExpand">
+                <CheckBox x:Name="Dijeta3"
+                          Margin="10,0,0,0"
+                              HorizontalOptions="Center"
+                              Color="Black"/>
+                <Label x:Name="VrstaDijeta3Naziv" 
+                       FontSize="Medium" 
+                       HorizontalTextAlignment="Center" 
+                       Margin="10,0,0,0"
+                       VerticalTextAlignment="Center"
+                       TextColor="Black"
+                       FontAttributes="Bold" ></Label>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                    HorizontalOptions="StartAndExpand">
+                <CheckBox x:Name="Dijeta4"
+                          Margin="10,0,0,0"
+                              HorizontalOptions="Center"
+                              Color="Black"/>
+                <Label x:Name="VrstaDijeta4Naziv" 
+                       FontSize="Medium" 
+                       HorizontalTextAlignment="Center" 
+                       Margin="10,0,0,0"
+                       VerticalTextAlignment="Center"
+                       TextColor="Black"
+                     FontAttributes="Bold"></Label>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                    HorizontalOptions="StartAndExpand">
+                <CheckBox x:Name="Dijeta5"
+                          Margin="10,0,0,0"
+                              HorizontalOptions="Center"
+                              Color="Black"/>
+                <Label x:Name="VrstaDijeta5Naziv" 
+                       FontSize="Medium" 
+                       HorizontalTextAlignment="Center" 
+                       Margin="10,0,0,0"
+                       VerticalTextAlignment="Center"
+                       TextColor="Black"
+                     FontAttributes="Bold"></Label>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                    HorizontalOptions="StartAndExpand">
+                <CheckBox x:Name="Dijeta6"
+                          Margin="10,0,0,0"
+                              HorizontalOptions="Center"
+                              Color="Black"/>
+                <Label x:Name="VrstaDijeta6Naziv" 
+                       FontSize="Medium" 
+                       HorizontalTextAlignment="Center" 
+                       Margin="10,0,0,0"
+                       VerticalTextAlignment="Center"
+                       TextColor="Black"
+                      FontAttributes="Bold"></Label>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                    HorizontalOptions="StartAndExpand">
+                <CheckBox x:Name="Dijeta7"
+                          Margin="10,0,0,0"
+                              HorizontalOptions="Center"
+                              Color="Black"/>
+                <Label x:Name="VrstaDijeta7Naziv" 
+                       FontSize="Medium" 
+                       HorizontalTextAlignment="Center" 
+                       Margin="10,0,0,0"
+                       VerticalTextAlignment="Center"
+                       TextColor="Black"
+                      FontAttributes="Bold"></Label>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                    HorizontalOptions="StartAndExpand">
+                <CheckBox x:Name="Dijeta8"
+                          Margin="10,0,0,0"
+                              HorizontalOptions="Center"
+                              Color="Black"/>
+                <Label x:Name="VrstaDijeta8Naziv" 
+                       FontSize="Medium" 
+                       HorizontalTextAlignment="Center" 
+                       Margin="10,0,0,0"
+                       VerticalTextAlignment="Center"
+                       TextColor="Black"
+                     FontAttributes="Bold"></Label>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                    HorizontalOptions="StartAndExpand">
+                <CheckBox x:Name="Dijeta9"
+                          Margin="10,0,0,0"
+                              HorizontalOptions="Center"
+                              Color="Black"/>
+                <Label x:Name="VrstaDijeta9Naziv" 
+                       FontSize="Medium" 
+                       HorizontalTextAlignment="Center" 
+                       Margin="10,0,0,0"
+                       VerticalTextAlignment="Center"
+                       TextColor="Black"
+                        FontAttributes="Bold"
+                       ></Label>
+            </HorizontalStackLayout>
+            <Button Text="DONE"
+                    WidthRequest="290"
+                     FontSize="Medium"
+                     FontAttributes="Bold"
+                     CornerRadius="15"
+                     BackgroundColor="#F3A83C"
+                     TextColor="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

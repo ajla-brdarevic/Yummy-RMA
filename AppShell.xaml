@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Yummy.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Yummy">
+
+    <ShellContent Title="Home" ContentTemplate="{DataTemplate local:Pages.Login}" Route="Login"/>
+
+   <!--<TabBar x:Name="TabBar">
+        <Tab Title="Home" Icon="home.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Pages.Home}" Route="Home"/>
+        </Tab>
+        <Tab Title="Search" Icon="search.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Pages.Search}" Route="Search"/>
+        </Tab>
+        <Tab Title="Profile" Icon="user.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Pages.Profile}" Route="Profile"/>
+        </Tab>
+    </TabBar>-->
+</Shell>

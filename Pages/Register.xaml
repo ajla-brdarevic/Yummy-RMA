@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Yummy.Pages.Register"
+             Title="Register"
+             BackgroundColor="#FFF5E4"
+             Shell.NavBarIsVisible="False">
+
+    <VerticalStackLayout>
+        <Image
+                Source="logo.png"
+                HeightRequest="220"
+                WidthRequest="220"
+                VerticalOptions="Center"
+                Margin="60"></Image>
+
+        <VerticalStackLayout
+         HorizontalOptions="Center">
+            <Label
+                Text="Username"
+                TextColor="Black"
+                FontSize="26"
+                FontFamily="Poppins-Medium">
+            </Label>
+
+            <Frame
+                BackgroundColor="White"
+                BorderColor="Transparent"
+                Padding="0"
+                WidthRequest="360"
+                HeightRequest="50">
+
+                <Entry 
+                    x:Name="usernameEntry"
+                    TextColor="Black"
+                    Placeholder="Username"
+                    PlaceholderColor="Gray"
+                    HorizontalOptions="Start"
+                    Margin="5"
+                    VerticalOptions="Center">
+                </Entry>
+            </Frame>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout
+            HorizontalOptions="Center"
+            Margin="0,20,0,0">
+            <Label
+                    Text="Email"
+                    TextColor="Black"
+                    FontSize="26"
+                    FontFamily="Poppins-Medium">
+            </Label>
+
+            <Frame
+                BackgroundColor="White"
+                BorderColor="Transparent"
+                Padding="0"
+                WidthRequest="360"
+                HeightRequest="50">
+
+                <Entry 
+                    x:Name="emailEntry"
+                    TextColor="Black"
+                    Placeholder="Email"
+                    PlaceholderColor="Gray"
+                    HorizontalOptions="Start"
+                    Margin="5"
+                    VerticalOptions="Center">
+                </Entry>
+            </Frame>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout
+            HorizontalOptions="Center"
+            Margin="0,20,0,0">
+            <Label
+                Text="Password"
+                TextColor="Black"
+                FontSize="26"
+                FontFamily="Poppins-Medium">
+            </Label>
+
+            <Frame
+                BackgroundColor="White"
+                BorderColor="Transparent"
+                Padding="0"
+                WidthRequest="360"
+                HeightRequest="50">
+
+                <Entry 
+                    x:Name="passwordEntry"
+                    IsPassword="True"
+                    TextColor="Black"
+                    Placeholder="Password"
+                    PlaceholderColor="Gray"
+                    HorizontalOptions="Start"
+                    Margin="5"
+                    VerticalOptions="Center">
+                </Entry>
+            </Frame>
+
+            <Button
+                x:Name="RegisterButton"
+                Text="Register"
+                BackgroundColor="#F3A83C"
+                FontSize="22"
+                FontFamily="Poppins-Medium"
+                WidthRequest="360"
+                TextColor="White"
+                Clicked="RegisterButton_clicked"
+                HorizontalOptions="Center"
+                Margin="0,70,0,0">  
+            </Button>
+
+            <HorizontalStackLayout
+            HorizontalOptions="Center"
+            Margin="0,60,0,0"
+            Spacing="12">
+
+                <Label
+                    Text="I'm already registered!"
+                    TextColor="Black"
+                    FontSize="24"
+                    FontFamily="Poppins-Regular">
+                </Label>
+
+                <Button
+                    x:Name="GoLoginButton"
+                    BackgroundColor="#FFF5E4"
+                    Text="Log In"
+                    FontSize="24"
+                    FontFamily="Poppins-Regular"
+                    TextColor="#F3A83C"
+                    Clicked="GoLoginButton_clicked"
+                    Padding="-5">
+                </Button>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
