@@ -33,14 +33,14 @@ namespace Yummy.Pages
             }
         }
 
-        private void ForgotButton_clicked(object sender, EventArgs e)
+        private async void ForgotButton_clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Pages.ForgotPass());
+            await Shell.Current.GoToAsync("//ForgotPassword");
         }
 
-        private void GoRegistreButton_clicked(object sender, EventArgs e)
+        private async void GoRegistreButton_clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Pages.Register());
+            await Shell.Current.GoToAsync("//Register");
         }
     }
 }

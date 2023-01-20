@@ -71,6 +71,10 @@
               "version": "[6.0.548, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
               "version": "[2.1.3, )"
@@ -181,6 +185,10 @@
               "version": "[6.0.548, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
               "version": "[2.1.3, )"
@@ -271,6 +279,10 @@
               "target": "Package",
               "version": "[6.0.548, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
             },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",
@@ -369,6 +381,10 @@
               "target": "Package",
               "version": "[10.0.22000.194, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
             },
             "SQLitePCLRaw.provider.dynamic_cdecl": {
               "target": "Package",

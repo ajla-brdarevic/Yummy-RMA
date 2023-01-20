@@ -27,9 +27,9 @@ namespace Yummy.Pages
             await Navigation.PushModalAsync(new ChooseDiet());
         }
 
-        private void GoLoginButton_clicked(object sender, EventArgs e)
+        private async void GoLoginButton_clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Pages.Login());
+            await Shell.Current.GoToAsync("//Login");
         }
     }
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Yummy.Pages.WelcomePage"
+             Title="WelcomePage"
+             BackgroundColor="#FFF5E4">
+    <VerticalStackLayout>
+
+        <Image
+            Source="logo.png"
+            HeightRequest="220"
+            WidthRequest="220"
+            VerticalOptions="Center"
+            Margin="60"></Image>
+        
+        <Button
+            x:Name="GetStarted"
+            Text="Get Started"
+            BackgroundColor="#F3A83C"
+            FontSize="22"
+            FontFamily="Poppins-Medium"
+            WidthRequest="360"
+            TextColor="White"
+            Clicked="GetStarted_clicked"
+            HorizontalOptions="Center"
+            Margin="0,70,0,0">
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>

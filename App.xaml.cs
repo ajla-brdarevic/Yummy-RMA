@@ -1,4 +1,6 @@
-﻿namespace Yummy;
+﻿using Yummy.Pages;
+
+namespace Yummy;
 
 public partial class App : Application
 {
@@ -7,6 +9,9 @@ public partial class App : Application
 		InitializeComponent();
 
 		MainPage = new AppShell();
-	}
+
+		//Routing.RegisterRoute("Login", typeof(Login));
+
+    }
 
 }
