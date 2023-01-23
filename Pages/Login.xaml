@@ -93,7 +93,7 @@
             FontFamily="Poppins-Medium"
             WidthRequest="360"
             TextColor="White"
-            Clicked="LoginButton_clicked"
+            Clicked="LoginButton_Clicked"
             HorizontalOptions="Center"
             Margin="0,70,0,0">
         </Button>

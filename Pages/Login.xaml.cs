@@ -15,7 +15,7 @@ namespace Yummy.Pages
             _connection = new SQLiteAsyncConnection(dbPath);
         }
 
-        private async void LoginButton_clicked(object sender, EventArgs e)
+        private async void LoginButton_Clicked(object sender, EventArgs e)
         {
             var username = usernameEntry.Text;
             var password = passwordEntry.Text;

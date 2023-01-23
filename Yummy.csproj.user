@@ -3,8 +3,8 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net6.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Samsung SM-A217F (Android 12.0 - API 31)</ActiveDebugProfile>
-    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
+    <ActiveDebugProfile>Samsung A21s API 31 (Android 12.0 - API 31)</ActiveDebugProfile>
+    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
     <DefaultDevice>samsung_a21s_api_31</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>

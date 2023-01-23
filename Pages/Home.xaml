@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Yummy.Pages.Home"
              Title="Home"
-             BackgroundColor="#FFF5E4">
+             BackgroundColor="#FFF5E4"
+             Shell.NavBarIsVisible="True">
     <ScrollView>
             <VerticalStackLayout
             Spacing="25"
@@ -27,17 +28,71 @@
                 <Frame
                 HeightRequest="200"
                 BackgroundColor="#F3A83C"
-                BorderColor="Transparent"></Frame>
+                BorderColor="Transparent"
+                    Padding="20,15,0,0">
+                <StackLayout>
+                    <Label Text="Healthy Food" 
+                           FontSize="30"
+                           FontFamily="Poppins-Medium"/>
+                    <VerticalStackLayout
+                        Margin="0,5,0,0">
+                        <Label Text="Keep you healthy life " 
+                            FontSize="26"
+                            FontFamily="Poppins-Medium"/>
+                        <Label Text="with healthy food" 
+                            FontSize="26"
+                            FontFamily="Poppins-Medium"
+                               Margin="0,-5,0,0"/>
+                    </VerticalStackLayout>
+                    <HorizontalStackLayout
+                        Margin="0,20,0,0">
+                        <Label Text="100" 
+                               FontSize="24"
+                               FontFamily="Poppins-Medium"/>
+                        <Label Text=" kcl"
+                               FontSize="20"
+                               Margin="2"
+                               FontFamily="Poppins-Medium"/>
+                    </HorizontalStackLayout>
+                    <AbsoluteLayout>
+                        <Image
+                            Source="salata.png"
+                            HeightRequest="300"
+                            WidthRequest="300"
+                            AbsoluteLayout.LayoutBounds="1,1,60,10"
+                            AbsoluteLayout.LayoutFlags="PositionProportional" />
+                    </AbsoluteLayout>
+                </StackLayout>
+            </Frame>
 
                 <Label
-                Text="Popular Receipes"
+                Text="Popular Recipes"
                 TextColor="Black"
                 FontSize="22"
                 FontFamily="Poppins-Medium"></Label>
 
-                <CarouselView></CarouselView>
+            <CarouselView ItemsSource="{Binding PopularRecipesList}">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Margin="0">
+                            <Image Source="{Binding Slika}" 
+                       HeightRequest="100" />
+                            <StackLayout Padding="20, 10">
+                                <Label Text="{Binding Naziv}"
+                           FontAttributes="Bold"
+                           TextColor="Black" 
+                           VerticalOptions="Start" />
+                                <Label Text="{Binding Kalorije}"
+                           TextColor="Gray" 
+                           VerticalOptions="Start" />
+                            </StackLayout>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
 
-                <Label
+
+            <Label
                 Text="Ideas"
                 TextColor="Black"
                 FontSize="22"

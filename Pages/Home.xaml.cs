@@ -1,10 +1,19 @@
+using Yummy.Models;
+
 namespace Yummy.Pages;
 
 public partial class Home : ContentPage
 {
-	public Home()
+    public List<PopularRecipes> PopularRecipesList { get; set; }
+
+    public Home()
 	{
-		InitializeComponent();
+
+        PopularRecipesList = new List<PopularRecipes>{
+            new PopularRecipes() { Id = 1, Slika = "slika1.png", Naziv ="Chicken Fajitas", Kalorije = "294 Calories" }
+        };
+
+        InitializeComponent();
 	
     DateTime currentTime = DateTime.Now;
 
@@ -28,6 +37,16 @@ public partial class Home : ContentPage
             timeOfTheDayImage.Source = "night.png";
             messageTextBlock.Text = "Good Night";
         }
+
+        BindingContext = this;
+
+        PopularRecipesList = new List<PopularRecipes>() {
+            new PopularRecipes { Slika = "slika1.jpg", Naziv = "Chicken Fajitas", Kalorije = "294 Calories" },
+            new PopularRecipes { Slika = "slika1.jpg", Naziv = "Chicken Fajitas", Kalorije = "294 Calories" },
+            new PopularRecipes { Slika = "slika1.jpg", Naziv = "Chicken Fajitas", Kalorije = "294 Calories" },
+            new PopularRecipes { Slika = "slika1.jpg", Naziv = "Chicken Fajitas", Kalorije = "294 Calories" }
+        };
     }
+
 
 }
