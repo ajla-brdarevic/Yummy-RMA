@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Yummy.Pages.WelcomePage"
              Title="WelcomePage"
-             BackgroundColor="#FFF5E4">
+             BackgroundColor="#FFF5E4"
+             Shell.NavBarIsVisible="False">
     <VerticalStackLayout>
 
         <Image
@@ -11,19 +12,35 @@
             HeightRequest="220"
             WidthRequest="220"
             VerticalOptions="Center"
-            Margin="60"></Image>
-        
-        <Button
-            x:Name="GetStarted"
-            Text="Get Started"
+            Margin="60" />
+
+        <VerticalStackLayout>
+            <Image
+                Source="background.png"/>
+
+            <Frame
             BackgroundColor="#F3A83C"
-            FontSize="22"
-            FontFamily="Poppins-Medium"
-            WidthRequest="360"
-            TextColor="White"
-            Clicked="GetStarted_clicked"
-            HorizontalOptions="Center"
-            Margin="0,70,0,0">
-        </Button>
+            BorderColor="Transparent"
+            VerticalOptions="EndAndExpand"
+            Margin="-2">
+
+                <Button
+                x:Name="GetStarted"
+                Text="Get Started"
+                BackgroundColor="#FFF5E4"
+                FontSize="22"
+                FontFamily="Poppins-Medium"
+                WidthRequest="360"
+                TextColor="#F3A83C"
+                Clicked="GetStarted_clicked"
+                HorizontalOptions="Center"
+                Margin="0,70,0,0" />
+            </Frame>
+            <Frame
+                BackgroundColor="#F3A83C"
+                BorderColor="Transparent"
+                CornerRadius="0"
+                HeightRequest="130"></Frame>
+        </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

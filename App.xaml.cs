@@ -4,14 +4,12 @@ namespace Yummy;
 
 public partial class App : Application
 {
-	public App()
-	{
-		InitializeComponent();
+    public App()
+    {
+        InitializeComponent();
 
-		MainPage = new AppShell();
-
-		//Routing.RegisterRoute("Login", typeof(Login));
-
+        MainPage = new AppShell();
+        Shell.Current.GoToAsync("//WelcomePage");
     }
 
 }

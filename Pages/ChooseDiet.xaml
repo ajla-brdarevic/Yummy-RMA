@@ -4,159 +4,165 @@
              x:Class="Yummy.Pages.ChooseDiet"
              Title="ChooseDiet"
              BackgroundColor="#FFF5E4">
+
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25"
-            VerticalOptions="Center">
-            <HorizontalStackLayout
-                Spacing="5"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                WidthRequest="290">
-                <Frame
+            Spacing="25">
+
+            <Frame
                 BackgroundColor="#F3A83C"
-                CornerRadius="15"
-                VerticalOptions="Center"
+                CornerRadius="0"
+                VerticalOptions="CenterAndExpand"
                 BorderColor="Transparent">
-                    <Label
+                <Label
                         Text="Choose your diet preferences"
                         TextColor="White"
-                        FontSize="Medium"
-                        FontAttributes="Bold">
-
-                    </Label>
-                </Frame>
-            </HorizontalStackLayout>
+                        FontSize="26"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        FontFamily="Poppins-Medium"/>
+            </Frame>
             <HorizontalStackLayout
-                    HorizontalOptions="StartAndExpand">
+                    HorizontalOptions="StartAndExpand"
+                    Padding="10">
                 <CheckBox x:Name="Dijeta1"
                           Margin="10,0,0,0"
                               HorizontalOptions="Center"
                               Color="Black"/>
                 <Label x:Name="VrstaDijeta1Naziv" 
-                       FontSize="Medium" 
+                       FontSize="18" 
                        HorizontalTextAlignment="Center" 
                        Margin="10,0,0,0"
                        VerticalTextAlignment="Center"
                        TextColor="Black"
-                       FontAttributes="Bold"></Label>
+                       FontFamily="Poppins-Regular"/>
             </HorizontalStackLayout>
             <HorizontalStackLayout
-                    HorizontalOptions="StartAndExpand">
+                    HorizontalOptions="StartAndExpand"
+                Padding="10">
                 <CheckBox x:Name="Dijeta2"
                           Margin="10,0,0,0"
                               HorizontalOptions="Center"
                               Color="Black"/>
                 <Label x:Name="VrstaDijeta2Naziv" 
-                       FontSize="Medium" 
+                       FontSize="18" 
                        HorizontalTextAlignment="Center" 
                        Margin="10,0,0,0"
                        VerticalTextAlignment="Center"
                        TextColor="Black"
-                     FontAttributes="Bold"></Label>
+                     FontFamily="Poppins-Regular"/>
             </HorizontalStackLayout>
             <HorizontalStackLayout
-                    HorizontalOptions="StartAndExpand">
+                    HorizontalOptions="StartAndExpand"
+                Padding="10">
                 <CheckBox x:Name="Dijeta3"
                           Margin="10,0,0,0"
                               HorizontalOptions="Center"
                               Color="Black"/>
                 <Label x:Name="VrstaDijeta3Naziv" 
-                       FontSize="Medium" 
+                       FontSize="18" 
                        HorizontalTextAlignment="Center" 
                        Margin="10,0,0,0"
                        VerticalTextAlignment="Center"
                        TextColor="Black"
-                       FontAttributes="Bold" ></Label>
+                       FontFamily="Poppins-Regular"/>
             </HorizontalStackLayout>
             <HorizontalStackLayout
-                    HorizontalOptions="StartAndExpand">
+                    HorizontalOptions="StartAndExpand"
+                Padding="10">
                 <CheckBox x:Name="Dijeta4"
                           Margin="10,0,0,0"
                               HorizontalOptions="Center"
                               Color="Black"/>
                 <Label x:Name="VrstaDijeta4Naziv" 
-                       FontSize="Medium" 
+                       FontSize="18" 
                        HorizontalTextAlignment="Center" 
                        Margin="10,0,0,0"
                        VerticalTextAlignment="Center"
                        TextColor="Black"
-                     FontAttributes="Bold"></Label>
+                     FontFamily="Poppins-Regular"/>
             </HorizontalStackLayout>
             <HorizontalStackLayout
-                    HorizontalOptions="StartAndExpand">
+                    HorizontalOptions="StartAndExpand"
+                Padding="10">
                 <CheckBox x:Name="Dijeta5"
                           Margin="10,0,0,0"
                               HorizontalOptions="Center"
                               Color="Black"/>
                 <Label x:Name="VrstaDijeta5Naziv" 
-                       FontSize="Medium" 
+                       FontSize="18" 
                        HorizontalTextAlignment="Center" 
                        Margin="10,0,0,0"
                        VerticalTextAlignment="Center"
                        TextColor="Black"
-                     FontAttributes="Bold"></Label>
+                     FontFamily="Poppins-Regular"/>
             </HorizontalStackLayout>
             <HorizontalStackLayout
-                    HorizontalOptions="StartAndExpand">
+                    HorizontalOptions="StartAndExpand"
+                Padding="10">
                 <CheckBox x:Name="Dijeta6"
                           Margin="10,0,0,0"
                               HorizontalOptions="Center"
                               Color="Black"/>
                 <Label x:Name="VrstaDijeta6Naziv" 
-                       FontSize="Medium" 
+                       FontSize="18" 
                        HorizontalTextAlignment="Center" 
                        Margin="10,0,0,0"
                        VerticalTextAlignment="Center"
                        TextColor="Black"
-                      FontAttributes="Bold"></Label>
+                      FontFamily="Poppins-Regular"/>
             </HorizontalStackLayout>
             <HorizontalStackLayout
-                    HorizontalOptions="StartAndExpand">
+                    HorizontalOptions="StartAndExpand"
+                Padding="10">
                 <CheckBox x:Name="Dijeta7"
                           Margin="10,0,0,0"
                               HorizontalOptions="Center"
                               Color="Black"/>
                 <Label x:Name="VrstaDijeta7Naziv" 
-                       FontSize="Medium" 
+                       FontSize="18" 
                        HorizontalTextAlignment="Center" 
                        Margin="10,0,0,0"
                        VerticalTextAlignment="Center"
                        TextColor="Black"
-                      FontAttributes="Bold"></Label>
+                      FontFamily="Poppins-Regular"/>
             </HorizontalStackLayout>
             <HorizontalStackLayout
-                    HorizontalOptions="StartAndExpand">
+                    HorizontalOptions="StartAndExpand"
+                Padding="10">
                 <CheckBox x:Name="Dijeta8"
                           Margin="10,0,0,0"
                               HorizontalOptions="Center"
                               Color="Black"/>
                 <Label x:Name="VrstaDijeta8Naziv" 
-                       FontSize="Medium" 
+                       FontSize="18" 
                        HorizontalTextAlignment="Center" 
                        Margin="10,0,0,0"
                        VerticalTextAlignment="Center"
                        TextColor="Black"
-                     FontAttributes="Bold"></Label>
+                     FontFamily="Poppins-Regular"/>
             </HorizontalStackLayout>
             <HorizontalStackLayout
-                    HorizontalOptions="StartAndExpand">
+                    HorizontalOptions="StartAndExpand"
+                Padding="10">
                 <CheckBox x:Name="Dijeta9"
                           Margin="10,0,0,0"
                               HorizontalOptions="Center"
                               Color="Black"/>
                 <Label x:Name="VrstaDijeta9Naziv" 
-                       FontSize="Medium" 
+                       FontSize="18" 
                        HorizontalTextAlignment="Center" 
                        Margin="10,0,0,0"
                        VerticalTextAlignment="Center"
                        TextColor="Black"
-                        FontAttributes="Bold"
-                       ></Label>
+                        FontFamily="Poppins-Regular"/>
             </HorizontalStackLayout>
             <Button Text="DONE"
+                    x:Name="Done"
+                    Clicked="Done_Clicked"
+                    FontFamily="Poppins-Medium"
                     WidthRequest="290"
-                     FontSize="Medium"
+                     FontSize="18"
                      FontAttributes="Bold"
                      CornerRadius="15"
                      BackgroundColor="#F3A83C"

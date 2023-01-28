@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:Yummy.Models"
+             x:Name="this"
+             x:Class="Yummy.CustomControls.CalendarView">
+
+    <Label
+        Text="{Binding Source={x:Reference this}, Path=SelectedDate, StringFormat='{0: MMM dd yyyy}'}"
+        TextColor="Black"/>
+
+    <CollectionView 
+        ItemsSource="{Binding Source={x:Reference this}, Path=Dates}">
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout
+                Orientation="Horizontal"
+                ItemSpacing="10"/>
+        </CollectionView.ItemsLayout>
+        <CollectionView.ItemTemplate>
+            <DataTemplate x:DataType="models:Calendar">
+                <Border
+                    WidthRequest="60"
+                    HeightRequest="80"
+                    Padding="10"
+                    BackgroundColor="White"
+                    Stroke="Transparent"
+                    StrokeShape="RoundRectangle 10,10,10,10">
+                    <VerticalStackLayout>
+                        <Label
+                            Text="{Binding Date, StringFormat='{0:ddd}'}"
+                            FontSize="18"
+                            HorizontalTextAlignment="Center"
+                            VerticalTextAlignment="Center"
+                            TextColor="Gray"/>
+                        <Label
+                            Text="{Binding Date, StringFormat='{0:dd}'}"
+                            FontSize="18"
+                            HorizontalTextAlignment="Center"
+                            VerticalTextAlignment="Center"
+                            TextColor="Gray"/>
+                    </VerticalStackLayout>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Source={x:Reference this}, Path=CurrentDateCommand}" CommandParameter="{Binding .}" />
+                    </Border.GestureRecognizers>
+                    
+                </Border>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+
+    </CollectionView>
+</StackLayout>

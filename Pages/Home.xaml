@@ -4,55 +4,61 @@
              x:Class="Yummy.Pages.Home"
              Title="Home"
              BackgroundColor="#FFF5E4"
-             Shell.NavBarIsVisible="True">
+             Shell.NavBarIsVisible="False">
     <ScrollView>
-            <VerticalStackLayout
+        <VerticalStackLayout 
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-                <HorizontalStackLayout
+            <HorizontalStackLayout
                 HorizontalOptions="Start"
-                VerticalOptions="Start">
-                    <Image
+                VerticalOptions="Start"
+                Margin="0,10,0,0">
+                <Image
                     x:Name="timeOfTheDayImage"
                     HeightRequest="30"
-                    WidthRequest="30"></Image>
-                    <Label
+                    WidthRequest="30" />
+                <Label
                     x:Name="messageTextBlock"
                     TextColor="#000000"
                     FontSize="26"
                     Padding="10"
-                    FontFamily="Poppins-Medium"></Label>
-                </HorizontalStackLayout>
+                    FontFamily="Poppins-Medium" />
+            </HorizontalStackLayout>
 
-                <Frame
+            <Frame 
                 HeightRequest="200"
                 BackgroundColor="#F3A83C"
                 BorderColor="Transparent"
-                    Padding="20,15,0,0">
+                Padding="20,15,0,0">
                 <StackLayout>
                     <Label Text="Healthy Food" 
                            FontSize="30"
-                           FontFamily="Poppins-Medium"/>
+                           FontFamily="Poppins-Medium"
+                           Padding="5"/>
                     <VerticalStackLayout
                         Margin="0,5,0,0">
-                        <Label Text="Keep you healthy life " 
-                            FontSize="26"
+                        <Label 
+                            Text="Keep you healthy life " 
+                            FontSize="24"
                             FontFamily="Poppins-Medium"/>
-                        <Label Text="with healthy food" 
-                            FontSize="26"
+                        <Label 
+                            Text="with healthy food" 
+                            FontSize="24"
                             FontFamily="Poppins-Medium"
-                               Margin="0,-5,0,0"/>
+                            Margin="0,-5,0,0"/>
                     </VerticalStackLayout>
                     <HorizontalStackLayout
                         Margin="0,20,0,0">
-                        <Label Text="100" 
-                               FontSize="24"
-                               FontFamily="Poppins-Medium"/>
-                        <Label Text=" kcl"
-                               FontSize="20"
-                               Margin="2"
-                               FontFamily="Poppins-Medium"/>
+                        <Label 
+                            Text="100" 
+                            FontSize="24"
+                            FontFamily="Poppins-Medium"/>
+                        <Label 
+                            Text=" kcl"
+                            FontSize="20"
+                            Margin="2"
+                            FontFamily="Poppins-Medium"/>
                     </HorizontalStackLayout>
                     <AbsoluteLayout>
                         <Image
@@ -65,39 +71,267 @@
                 </StackLayout>
             </Frame>
 
-                <Label
-                Text="Popular Recipes"
-                TextColor="Black"
-                FontSize="22"
-                FontFamily="Poppins-Medium"></Label>
+            <Grid>
+                <Label 
+                    Text="Popular Recipes"
+                    TextColor="Black"
+                    FontSize="22"
+                    FontFamily="Poppins-Medium" />
 
-            <CarouselView ItemsSource="{Binding PopularRecipesList}">
+                <Button
+                    x:Name="SeaAll"
+                    BackgroundColor="#FFF5E4"
+                    Text="See all"
+                    FontSize="20"
+                    FontFamily="Poppins-Regular"
+                    TextColor="#E5737D"
+                    Clicked="SeeAll_ButtonClicked"
+                    Margin="-5"
+                    HorizontalOptions="End" />
+            </Grid>
+
+
+            <CarouselView 
+                ItemsSource="{Binding PopularRecipesList}"
+                PeekAreaInsets="300">
+                <CarouselView.ItemsLayout>
+                    <LinearItemsLayout 
+                        Orientation="Horizontal" 
+                        ItemSpacing="0"/>
+                </CarouselView.ItemsLayout>
                 <CarouselView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Margin="0">
-                            <Image Source="{Binding Slika}" 
-                       HeightRequest="100" />
-                            <StackLayout Padding="20, 10">
-                                <Label Text="{Binding Naziv}"
-                           FontAttributes="Bold"
-                           TextColor="Black" 
-                           VerticalOptions="Start" />
-                                <Label Text="{Binding Kalorije}"
-                           TextColor="Gray" 
-                           VerticalOptions="Start" />
+                        <Frame
+                            BackgroundColor="White"
+                            BorderColor="Transparent"
+                            Padding="0, 0, 0, 0"
+                            WidthRequest="160">
+                            <StackLayout 
+                                Margin="0"
+                                Padding="0"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand">
+                                <Image 
+                                    Source="{Binding Slika}" 
+                                    HeightRequest="70" 
+                                    WidthRequest="160"
+                                    HorizontalOptions="FillAndExpand"
+                                    VerticalOptions="FillAndExpand"
+                                    Margin="0"/>
+                                <StackLayout>
+                                    <Label 
+                                        Text="{Binding Naziv}"
+                                        FontFamily="Poppins-Medium"
+                                        TextColor="Black" 
+                                        FontSize="16"
+                                        Margin="0"
+                                        Padding="0"/>
+                                    <Label 
+                                        Text="{Binding Kalorije}"
+                                        TextColor="Gray" 
+                                        FontSize="14"
+                                        FontFamily="Poppins-Regular"
+                                        Margin="0"
+                                        Padding="0"/>
+                                </StackLayout>
                             </StackLayout>
-                        </StackLayout>
+                        </Frame>
                     </DataTemplate>
                 </CarouselView.ItemTemplate>
             </CarouselView>
 
+            <Grid>
+                <Label 
+                    Text="Ideas"
+                    TextColor="Black"
+                    FontSize="22"
+                    FontFamily="Poppins-Medium" />
+                <Button 
+                    x:Name="IdeasButton"
+                    BackgroundColor="#FFF5E4"
+                    Text="See all"
+                    FontSize="20"
+                    FontFamily="Poppins-Regular"
+                    TextColor="#E5737D"
+                    Clicked="SeeAllIdeas_ButtonClicked"
+                    Margin="-5"
+                    HorizontalOptions="End" />
+            </Grid>
 
-            <Label
-                Text="Ideas"
-                TextColor="Black"
-                FontSize="22"
-                FontFamily="Poppins-Medium"></Label>
-            </VerticalStackLayout>
-        </ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Frame 
+                    Grid.Row="0" Grid.Column="0" 
+                    BackgroundColor="White"
+                    BorderColor="Transparent"
+                    HeightRequest="180">
+                    <VerticalStackLayout>
+                        <Image 
+                            Source="slika1.png"
+                            HeightRequest="70" 
+                            WidthRequest="160" />
+                        <Label 
+                            Text="Chicken Fajitas" 
+                            TextColor="Black" 
+                            FontSize="16" 
+                            FontFamily="Poppins-Medium" />
+                        <Label 
+                            Text="294 Calories" TextColor="Gray" 
+                            FontSize="14"
+                            FontFamily="Poppins-Regular" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame 
+                    Grid.Row="0" Grid.Column="1"
+                    BackgroundColor="White"
+                    BorderColor="Transparent"
+                    HeightRequest="180">
+                    <VerticalStackLayout>
+                        <Image 
+                            Source="slika2.png"
+                            HeightRequest="70" 
+                            WidthRequest="160" />
+                        <Label 
+                            Text="Hot Italian Chilli" 
+                            TextColor="Black" 
+                            FontSize="16" 
+                            FontFamily="Poppins-Medium" />
+                        <Label 
+                            Text="316 Calories" 
+                            TextColor="Gray" 
+                            FontSize="14"
+                            FontFamily="Poppins-Regular"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame 
+                    Grid.Row="1" Grid.Column="0"
+                    BackgroundColor="White"
+                    BorderColor="Transparent"
+                    HeightRequest="180">
+                    <VerticalStackLayout>
+                        <Image 
+                            Source="slika3.png"
+                            HeightRequest="70" 
+                            WidthRequest="160"/>
+                        <Label 
+                            Text="Coconut Rice Bowls" 
+                            TextColor="Black" 
+                            FontSize="16" 
+                            FontFamily="Poppins-Medium"/>
+                        <Label 
+                            Text="373 Calories" 
+                            TextColor="Gray" 
+                            FontSize="14"
+                            FontFamily="Poppins-Regular" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame 
+                    Grid.Row="1" Grid.Column="1"
+                    BackgroundColor="White"
+                    BorderColor="Transparent"
+                    HeightRequest="180">
+                    <VerticalStackLayout>
+                        <Image 
+                            Source="slika4.png"
+                            HeightRequest="70" 
+                            WidthRequest="160" />
+                        <Label 
+                            Text="Penaut Butter Cookies" 
+                            TextColor="Black" 
+                            FontSize="16" 
+                            FontFamily="Poppins-Medium" />
+                        <Label 
+                            Text="126 Calories" 
+                            TextColor="Gray" 
+                            FontSize="14"
+                            FontFamily="Poppins-Regular"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame 
+                    Grid.Row="1" Grid.Column="1"
+                    BackgroundColor="White"
+                    BorderColor="Transparent"
+                    HeightRequest="180">
+                    <VerticalStackLayout>
+                        <Image 
+                            Source="slika4.png"
+                            HeightRequest="70" 
+                            WidthRequest="160" />
+                        <Label 
+                            Text="Penaut Butter Cookies" 
+                            TextColor="Black" 
+                            FontSize="16" 
+                            FontFamily="Poppins-Medium" />
+                        <Label 
+                            Text="269 Calories" 
+                            TextColor="Gray" 
+                            FontSize="14"
+                            FontFamily="Poppins-Regular"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame 
+                    Grid.Row="1" Grid.Column="1"
+                    BackgroundColor="White"
+                    BorderColor="Transparent"
+                    HeightRequest="180">
+                    <VerticalStackLayout>
+                        <Image 
+                            Source="slika4.png"
+                            HeightRequest="70" 
+                            WidthRequest="160" />
+                        <Label 
+                            Text="Penaut Butter Cookies" 
+                            TextColor="Black" 
+                            FontSize="16" 
+                            FontFamily="Poppins-Medium" />
+                        <Label 
+                            Text="269 Calories" 
+                            TextColor="Gray" 
+                            FontSize="14"
+                            FontFamily="Poppins-Regular"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame 
+                    Grid.Row="1" Grid.Column="1"
+                    BackgroundColor="White"
+                    BorderColor="Transparent"
+                    HeightRequest="180">
+                    <VerticalStackLayout>
+                        <Image 
+                            Source="slika4.png"
+                            HeightRequest="70" 
+                            WidthRequest="160" />
+                        <Label 
+                            Text="Penaut Butter Cookies" 
+                            TextColor="Black" 
+                            FontSize="16" 
+                            FontFamily="Poppins-Medium" />
+                        <Label 
+                            Text="269 Calories" 
+                            TextColor="Gray" 
+                            FontSize="14"
+                            FontFamily="Poppins-Regular"/>
+                    </VerticalStackLayout>
+                </Frame>
+                
+                
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
 
 </ContentPage>

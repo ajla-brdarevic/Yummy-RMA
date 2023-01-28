@@ -49,9 +49,7 @@ namespace Yummy.Models
 
         [MaxLength(50)]
         public string Email { get; set; }
-
         public string Password { get; set; }
-
         [MaxLength(50)]
         public string UserName { get; set; }
     }

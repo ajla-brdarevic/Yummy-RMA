@@ -5,14 +5,14 @@
              Title="Login"
              BackgroundColor="#FFF5E4"
              Shell.NavBarIsVisible="False">
-
-    <VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout>
         <Image
             Source="logo.png"
             HeightRequest="220"
             WidthRequest="220"
             VerticalOptions="Center"
-            Margin="60"></Image>
+            Margin="80"></Image>
 
         <VerticalStackLayout
             HorizontalOptions="Center">
@@ -71,18 +71,6 @@
                 </Entry>
             </Frame>
 
-            <Button
-                x:Name="ForgotPassword"
-                BackgroundColor="#FFF5E4"
-                Text="Forgot password?"
-                FontSize="22"
-                FontFamily="Poppins-Regular"
-                TextColor="Black"
-                Clicked="ForgotButton_clicked"
-                Padding="-5"
-                HorizontalOptions="Start"
-                Margin="4,4,0,0">
-            </Button>
         </VerticalStackLayout>
 
         <Button
@@ -123,4 +111,5 @@
         </HorizontalStackLayout>
 
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

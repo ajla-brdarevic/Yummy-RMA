@@ -48,11 +48,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\gfcourgettepancakes.jpg" />
+	  <None Remove="Resources\Images\home.png" />
+	  <None Remove="Resources\Images\meditstyleshrimp.jpg" />
+	  <None Remove="Resources\Images\redsnapperpotatoes.jpg" />
+	  <None Remove="Resources\Images\risottogamb.jpg" />
+	  <None Remove="Resources\Images\saladblow.jpg" />
+	  <None Remove="Resources\Images\search.png" />
 	  <None Remove="Resources\Images\slika1.png" />
+	  <None Remove="Resources\Images\user.png" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
+	  <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+	  <PackageReference Include="SkiaSharp" Version="2.88.3" />
+	  <PackageReference Include="SkiaSharp.Views" Version="2.88.3" />
 	  <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 	  <PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.3" />
 	</ItemGroup>
@@ -64,10 +76,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="CustomControls\CalendarView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\ChooseDiet.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\ForgotPass.xaml">
+	  <MauiXaml Update="Pages\Detalji.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\Home.xaml">

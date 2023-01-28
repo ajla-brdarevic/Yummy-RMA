@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Yummy.Pages.Detalji"
+             Title="Detalji"
+             BackgroundColor="#FFF5E4"
+             Shell.NavBarIsVisible="False">
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Label 
+                x:Name="jeloNaziv" 
+                FontSize="28" 
+                Margin="0,10,0,10" 
+                TextColor="#F5A608"
+                FontFamily="Poppins-Medium"/>
+            <Label 
+                x:Name="kratkiOpis" 
+                FontSize="20" 
+                Margin="0,10,0,10" 
+                TextColor="#23191A" 
+                FontFamily="Poppins-Medium"/>
+            <Image 
+                x:Name="sourceImage" />
+            <Label 
+                x:Name="dugiOpis" 
+                FontSize="16" 
+                Margin="2,10,2,10" 
+                TextColor="#23191A" 
+                FontFamily="Poppins-Regular"/>
+            <Label 
+                Text="Instructions"
+                FontSize="20" 
+                Margin="0,8,0,10" 
+                TextColor="#23191A" 
+                FontFamily="Poppins-Medium"/>
+            <Label 
+                x:Name="instrukcije" 
+                FontSize="16" 
+                Margin="2,10,2,10" 
+                TextColor="#23191A" 
+                FontFamily="Poppins-Regular"/>
+            
+            <StackLayout 
+                Orientation="Horizontal" 
+                HorizontalOptions="CenterAndExpand" 
+                Padding="10">
+                
+                <Button 
+                    Text="Choose" 
+                    CornerRadius="20"
+                    FontFamily="Poppins-Medium"
+                    BackgroundColor="#F5A608" 
+                    TextColor="White" 
+                    MinimumWidthRequest="30" 
+                    FontSize="20" 
+                    Clicked="Button_Clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

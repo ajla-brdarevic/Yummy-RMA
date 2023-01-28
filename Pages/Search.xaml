@@ -2,11 +2,62 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Yummy.Pages.Search"
-             Title="Search">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Search"
+             BackgroundColor="#FFF5E4"
+             Shell.NavBarIsVisible="False">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label 
+                Text="Ideas For Your Meal" 
+                HorizontalTextAlignment="Center" 
+                FontFamily="Poppins-Medium"
+                FontSize="30" 
+                TextColor="#F3A83C" 
+                Padding="20"></Label>
+            <Frame
+                 BackgroundColor="#FFF5E4"
+                VerticalOptions="Center"
+                BorderColor="Transparent"
+                    CornerRadius="15">
+                <SearchBar
+                    Placeholder="Search"
+                    PlaceholderColor="Orange"
+                    TextColor="Orange"
+                    BackgroundColor="White"
+                    ></SearchBar>
+            </Frame>
+            <ListView ItemsSource="{Binding MealsList}" 
+                      ItemTapped="ListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell 
+                            TextColor="Black">
+                            <ImageCell.ImageSource>
+                                <Binding 
+                                    Path="Slika"></Binding>
+                            </ImageCell.ImageSource>
+                            <ImageCell.Text>
+                                <Binding 
+                                    Path="Naslov"/>
+                            </ImageCell.Text>
+                            <ImageCell.Detail>
+                                <Binding 
+                                    Path="KratkiOpis"></Binding>
+                            </ImageCell.Detail>
+                        </ImageCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button 
+                Text="Inspiration"
+                FontFamily="Poppins-Medium"
+                FontSize="18"
+                WidthRequest="180"
+                BackgroundColor="#F5A608" 
+                CornerRadius="20" 
+                Margin="0,0,0,20" 
+                Clicked="Button_Clicked" />
+        </StackLayout>
+
+    </ScrollView>
 </ContentPage>

@@ -25,7 +25,10 @@ namespace Yummy.Pages
                                 .FirstOrDefaultAsync();
             if (user != null)
             {
-                await Navigation.PushAsync(new Home());
+                //await Navigation.PushAsync(new Home());
+                //await ((App)Application.Current).GoToHomePage();
+                await Shell.Current.GoToAsync("///Home");
+
             }
             else
             {
@@ -33,14 +36,9 @@ namespace Yummy.Pages
             }
         }
 
-        private async void ForgotButton_clicked(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync("//ForgotPassword");
-        }
-
         private async void GoRegistreButton_clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("//Register");
+            await Shell.Current.GoToAsync("///Register");
         }
     }
 }

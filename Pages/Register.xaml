@@ -6,13 +6,14 @@
              BackgroundColor="#FFF5E4"
              Shell.NavBarIsVisible="False">
 
-    <VerticalStackLayout>
-        <Image
-                Source="logo.png"
-                HeightRequest="220"
-                WidthRequest="220"
-                VerticalOptions="Center"
-                Margin="60"></Image>
+    <ScrollView>
+        <VerticalStackLayout>
+        <Image 
+            Source="logo.png"
+            HeightRequest="220"
+            WidthRequest="220"
+            VerticalOptions="Center"
+            Margin="70" />
 
         <VerticalStackLayout
          HorizontalOptions="Center">
@@ -20,8 +21,7 @@
                 Text="Username"
                 TextColor="Black"
                 FontSize="26"
-                FontFamily="Poppins-Medium">
-            </Label>
+                FontFamily="Poppins-Medium" />
 
             <Frame
                 BackgroundColor="White"
@@ -37,8 +37,7 @@
                     PlaceholderColor="Gray"
                     HorizontalOptions="Start"
                     Margin="5"
-                    VerticalOptions="Center">
-                </Entry>
+                    VerticalOptions="Center" />
             </Frame>
         </VerticalStackLayout>
 
@@ -46,11 +45,10 @@
             HorizontalOptions="Center"
             Margin="0,20,0,0">
             <Label
-                    Text="Email"
-                    TextColor="Black"
-                    FontSize="26"
-                    FontFamily="Poppins-Medium">
-            </Label>
+                Text="Email"
+                TextColor="Black"
+                FontSize="26"
+                FontFamily="Poppins-Medium" />
 
             <Frame
                 BackgroundColor="White"
@@ -66,8 +64,7 @@
                     PlaceholderColor="Gray"
                     HorizontalOptions="Start"
                     Margin="5"
-                    VerticalOptions="Center">
-                </Entry>
+                    VerticalOptions="Center" />
             </Frame>
         </VerticalStackLayout>
 
@@ -78,8 +75,7 @@
                 Text="Password"
                 TextColor="Black"
                 FontSize="26"
-                FontFamily="Poppins-Medium">
-            </Label>
+                FontFamily="Poppins-Medium" />
 
             <Frame
                 BackgroundColor="White"
@@ -96,8 +92,7 @@
                     PlaceholderColor="Gray"
                     HorizontalOptions="Start"
                     Margin="5"
-                    VerticalOptions="Center">
-                </Entry>
+                    VerticalOptions="Center" />
             </Frame>
 
             <Button
@@ -110,20 +105,18 @@
                 TextColor="White"
                 Clicked="RegisterButton_clicked"
                 HorizontalOptions="Center"
-                Margin="0,70,0,0">  
-            </Button>
+                Margin="0,50,0,0" />
 
             <HorizontalStackLayout
             HorizontalOptions="Center"
-            Margin="0,60,0,0"
+            Margin="0,40,0,0"
             Spacing="12">
 
                 <Label
                     Text="I'm already registered!"
                     TextColor="Black"
                     FontSize="24"
-                    FontFamily="Poppins-Regular">
-                </Label>
+                    FontFamily="Poppins-Regular" />
 
                 <Button
                     x:Name="GoLoginButton"
@@ -133,10 +126,10 @@
                     FontFamily="Poppins-Regular"
                     TextColor="#F3A83C"
                     Clicked="GoLoginButton_clicked"
-                    Padding="-5">
-                </Button>
+                    Padding="-5" />
             </HorizontalStackLayout>
 
         </VerticalStackLayout>
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

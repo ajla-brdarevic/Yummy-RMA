@@ -8,6 +8,5 @@ public partial class AppShell : Shell
 	{
 		InitializeComponent();
         Navigation.PushModalAsync(new Login());
-
     }
 }

@@ -3,15 +3,19 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net6.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Samsung A21s API 31 (Android 12.0 - API 31)</ActiveDebugProfile>
-    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
+    <ActiveDebugProfile>Samsung SM-A217F (Android 12.0 - API 31)</ActiveDebugProfile>
+    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
     <DefaultDevice>samsung_a21s_api_31</DefaultDevice>
+    <SelectedDevice>samsung_a21s_api_31</SelectedDevice>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="CustomControls\CalendarView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\ChooseDiet.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Pages\ForgotPass.xaml">
+    <MauiXaml Update="Pages\Detalji.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Pages\Home.xaml">

@@ -3,20 +3,21 @@
     x:Class="Yummy.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:pages="clr-namespace:Yummy.Pages"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:pages="clr-namespace:Yummy.Pages">
 
-    <!--<ShellContent ContentTemplate="{DataTemplate pages:WelcomePage}" Route="WelcomePage"/>-->
+    <ShellContent ContentTemplate="{DataTemplate pages:WelcomePage}" Route="WelcomePage"/>
+    <ShellContent ContentTemplate="{DataTemplate pages:Login}" Route="Login"/>
+    <ShellContent ContentTemplate="{DataTemplate pages:Register}" Route="Register"/>
 
     <TabBar x:Name="TabBar" IsVisible="True">
 
-        <Tab Title="Home" Icon="home.png">
+        <Tab Icon="home.png">
             <ShellContent ContentTemplate="{DataTemplate pages:Home}" Route="Home"/>
         </Tab>
-        <Tab Title="Search" Icon="search.png">
+        <Tab Icon="search.png">
             <ShellContent ContentTemplate="{DataTemplate pages:Search}" Route="Search"/>
         </Tab>
-        <Tab Title="Profile" Icon="user.png">
+        <Tab Icon="user.png">
             <ShellContent ContentTemplate="{DataTemplate pages:Profile}" Route="Profile"/>
         </Tab>
     </TabBar>
